@@ -1,0 +1,193 @@
+body {
+    background-color: rgb(23, 23, 23);
+}
+
+
+
+/* hero section  */
+.carousel-item {
+    margin-top: 10vh;
+    min-height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+
+.image {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, black, transparent);
+    height: 50%;
+    width: 100%;
+    z-index: 3;
+}
+
+.texture {
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+}
+.carousel-caption {
+    z-index: 5;
+}
+.carousel-p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+
+
+/* navbar */
+.nav-item {
+    margin-inline: 1rem;
+}
+
+/* navbar items underline transition  */
+.nav-link {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/* news strip  */
+marquee {
+    background-color: #FF4C4C;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* news grid  */
+.news {
+    display: grid;
+    gap: 1rem;
+}
+
+@media(width >=768px) {
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .special-card {
+        grid-column: span 2;
+    }
+}
+
+@media(width >=992px) {
+    .news {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(width >=1400px) {
+    .news {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+
+/* news card  */
+/* normal card */
+.cardItem {
+    border-radius: 10px;
+}
+
+.card-title {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        text-decoration: underline;
+        color: white
+    }
+}
+
+.card {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.39);
+    color: white;
+}
+
+.card-title {
+    /* these properties are for hiding the overflow title of the news card */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+i {
+    cursor: pointer;
+}
+
+
+/* special card  */
+.transparent-card {
+    position: relative;
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.731), transparent);
+}
+
+.special-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.special-body {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* weather card  */
+.days {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+@media(width < 768px){
+    .height{
+        min-height: 30vh;
+    }
+}

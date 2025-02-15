@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="input-group border rounded-pill">
+                        <input type="text" class="form-control bg-dark text-light border-0 rounded-pill"
+                            placeholder="Search Post" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary rounded-circle bg-light" type="button"
+                            id="button-addon2"><i class="bi bi-search"></i></button>
+                    </li>
+                    <li>
+                        <a class="btn ms-4 btn-light rounded-pill" style="text-wrap: nowrap;" href="#">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- hero -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/trump.jpg" class="image d-block w-100" alt="...">
+                <div class="overlay"></div>
+                <img src="assets/texture.png" class="texture d-none d-sm-block" alt="">
+                <div class="carousel-caption">
+                    <h3 class="carousel-p">Donald Trump’s Latest Move Has Everyone Talking</h3>
+                    <p class="lead carousel-p">His latest announcement is shaking things up and sparking conversations everywhere.
+                        Love him or hate him, everyone’s watching.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/protest.jpg" class="image d-block w-100" alt="...">
+                <div class="overlay"></div>
+                <img src="assets/texture.png" class="texture d-none d-sm-block" alt="">
+                <div class="carousel-caption">
+                    <h3 class="carousel-p">Massive Protests Erupt in Downtown as Citizens Demand Reform</h3>
+                    <p class="lead carousel-p">Tensions rise as demonstrators take to the streets, calling for immediate action.
+                        Protesters and officials engage in a standoff as the city watches closely.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/car.jpg" class="image d-block w-100" alt="...">
+                <div class="overlay"></div>
+                <img src="assets/texture.png" class="texture d-none d-sm-block" alt="">
+                <div class="carousel-caption">
+                    <h3 class="carousel-p">Lamborghini’s Bold New Look Just Took Hype to the Next Level</h3>
+                    <p class="lead carousel-p">Lamborghini’s latest design is making waves, turning heads, and redefining speed.
+                        This is just the beginning.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- newsTap -->
+    <marquee class="p-3 text-light bg-danger" behavior="scroll" direction="left">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Qui repellat, cupiditate velit ex nam porro commodi dolorem aliquid enim quis vero quos fugiat
+        explicabo eveniet est, deserunt sed laudantium voluptatem.</marquee>
+
+
+
+    <!-- your interests -->
+    <div class="container text-light mt-5 px-md-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-4">
+                <h4><b>Your Interests</b></h4>
+            </div>
+            <div class="col-12 col-sm-8 d-flex" style="flex-wrap: wrap;">
+                <a class="btn btn-light rounded-pill m-1" href="#">General</a>
+                <a class="btn btn-outline-light rounded-pill m-1" href="#">Sports</a>
+                <a class="btn btn-outline-light rounded-pill m-1" href="#">Gaming</a>
+                <a class="btn btn-outline-light rounded-pill m-1" href="#">Politics</a>
+                <a class="btn btn-outline-light rounded-pill m-1" href="#">Education</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- grid -->
+    <div class="container p-5">
+        <div class="news">
+
+            <!-- special card -->
+            <div class="cardItem height special-card">
+                <div class="card bg-dark transparent-card">
+                    <img src="assets/3.jpg" class="rounded special-img" alt="...">
+                    <!-- adding dark gradient to see the text better -->
+                    <div class="gradient"></div>
+                    <div class="card-body w-100 special-body">
+                        <a class="card-title h5 text-light" href="#">Card title Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit. Nam optio expedita minima libero placeat pariatur perspiciatis necessitatibus dolorem
+                            porro eum. Voluptate culpa eius rerum animi itaque perspiciatis deleniti quos ab.</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- weather card  -->
+            <div class="cardItem height rounded" style="position: relative;">
+                <div class="card bg-dark rounded">
+
+                    <img src="assets/clouds.jpg" class="img-fluid w-100 h-100 rounded"
+                        style=" position: absolute; object-fit: cover;" alt="">
+
+                    <div class="bg-transparent p-3 d-flex flex-column justify-content-around w-100 h-100"
+                        style="position: absolute;">
+                        <!-- top -->
+                        <div class="text-blue d-flex">
+                            <i style="font-size: 3rem;" class="bi bi-cloud-drizzle-fill me-auto"></i>
+                            <div>
+                                <h6 style="font-size: 3rem; margin: 0;">21 C</h6>
+                                <p>Raining</p>
+                            </div>
+                        </div>
+                        <!-- days  -->
+                        <div class="d-flex justify-content-around">
+                            <!-- Today -->
+                            <div class="days p-1 d-flex flex-column justify-content-center align-items-center">
+                                <p>Today</p>
+                                <div><i class="bi bi-cloud-drizzle-fill me-auto"></i></div>
+                                <p>21 C</p>
+                            </div>
+                            <!-- another day -->
+                            <div class="days p-1 d-flex flex-column justify-content-center align-items-center">
+                                <p>Thursday</p>
+                                <div><i class="bi bi-cloud-sun-fill"></i></div>
+                                <p>24 C</p>
+                            </div>
+                            <!--  another day -->
+                            <div class="days p-1 d-flex flex-column justify-content-center align-items-center">
+                                <p>Friday</p>
+                                <div><i class="bi bi-brightness-high-fill"></i></div>
+                                <p>26 C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- sports card  -->
+            <div class="cardItem">
+                <div class="card bg-dark py-2 px-4 d-flex flex-column justify-content-between">
+                    <div class="text-center"><b>Sports</b></div>
+                    <div>
+                        <p class="m-1">Football</p>
+                        <div class="country container d-flex rounded-pill justify-content-between align-items-center"
+                            style="border: 1px solid white;">
+                            <p class="m-0">AUS</p>
+                            <p class="m-0">VS</p>
+                            <p class="m-0">ENG</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="m-1">Cricket</p>
+                        <div class="country container d-flex rounded-pill justify-content-between align-items-center"
+                            style="border: 1px solid white;">
+                            <p class="m-0">GER</p>
+                            <p class="m-0">VS</p>
+                            <p class="m-0">AUS</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="m-1">Hockey</p>
+                        <div class="country container d-flex rounded-pill justify-content-between align-items-center"
+                            style="border: 1px solid white;">
+                            <p class="m-0">ENG</p>
+                            <p class="m-0">VS</p>
+                            <p class="m-0">PAK</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="m-1">Baseball</p>
+                        <div class="country container d-flex rounded-pill justify-content-between align-items-center"
+                            style="border: 1px solid white;">
+                            <p class="m-0">BRA</p>
+                            <p class="m-0">VS</p>
+                            <p class="m-0">IND</p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a class="btn btn-sm rounded-pill btn-outline-light" href="#">See more ></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- transparent card -->
+            <div class="cardItem special-card">
+                <div class="card bg-dark transparent-card">
+                    <img src="assets/5.jpg" class="rounded special-img" alt="...">
+                    <!-- adding dark gradient to see the text better -->
+                    <div class="gradient"></div>
+                    <div class="card-body w-100 special-body">
+                        <a class="card-title h5 text-light" href="#">Card title Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit. Nam optio expedita minima libero placeat pariatur perspiciatis necessitatibus dolorem
+                            porro eum. Voluptate culpa eius rerum animi itaque perspiciatis deleniti quos ab.</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- normal card  -->
+            <div class="cardItem">
+                <div class="card bg-dark">
+                    <img src="assets/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <a class="card-title h5" href="#">Card title Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat
+                            repellat et repellendus quae dicta pariatur, dignissimos molestiae dolorum, porro iusto
+                            recusandae excepturi sequi cum! Non quod deleniti atque nesciunt?</a>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <div class="d-flex justify-content-between">
+                                <div><i class="bi bi-hand-thumbs-up me-1"></i>24</div>
+                                <i class="bi-hand-thumbs-down ms-4"></i>
+                            </div>
+                            <div>
+                                <i class="me-1 bi bi-eye"></i>49
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer class="p-5" style="background-color: black;">
+        <div class="container text-center text-light">
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <h3><b>Our Partners</b></h3>
+                    <div style="text-decoration: underline;">
+                        <div>Youtube</div>
+                        <div>Google</div>
+                        <div>Microsoft</div>
+                        <div>Tesla</div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 footer-col">
+                    <h3><b>Collaboration With</b></h3>
+                    <div>Microsoft</div>
+                    <div>Tesla</div>
+                    <div>Youtube</div>
+                    <div>Google</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mx-sm-auto footer-col">
+                    <h3><b>Contact Us</b></h3>
+                    <div>info@company.com</div>
+                    <div>+1 343 3454365</div>
+                    <div>anotherCompany.com</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="mt-5">&copy; 2025 Company. All Rights Reserved.</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
